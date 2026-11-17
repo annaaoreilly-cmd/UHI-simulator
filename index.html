@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Urban Heat Island Simulator</title>
+
+  <!-- Connect the CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>🌎 Urban Heat Island Simulator</h1>
+
+  <p>
+    Build your own neighborhood and explore how
+    different land surfaces affect urban heat!
+  </p>
+
+  <h3>Choose what to add:</h3>
+
+  <div id="tools">
+    <button onclick="selectTool('tree')">🌳 Tree</button>
+    <button onclick="selectTool('building')">🏢 Building</button>
+    <button onclick="selectTool('pavement')">🛣️ Pavement</button>
+    <button onclick="selectTool('grass')">🌱 Grass</button>
+  </div>
+
+  <h3>Your Neighborhood</h3>
+
+  <div id="grid"></div>
+  
+<div id="heat-panel">
+  <h2>🌡️ Neighborhood Heat Score</h2>
+
+  <div id="heat-score">0</div>
+
+  <p id="heat-message">Your neighborhood is at its starting baseline.</p>
+
+  <p class="disclaimer">
+    *These are not real calculations or temperature measurements*
+  </p>
+</div>
+
+
+  <p>Click any square to add your selected feature!</p>
+
+  <!-- Connect the JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
